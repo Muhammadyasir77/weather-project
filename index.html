@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="weather-app">
+    <h1 class="app-heading">Weather App</h1>
+    <div class="input-box">
+        <input type="text" class="input-city" placeholder="enter city...">
+        <div class="searchbtn">
+          <button class="search-city"><img src="images/search.png"></button>
+        </div>
+    </div>
+    <div class="display-weather">
+       <img src="images/rain.png" alt="cloud.png" class="cloud-png">
+       <h1 class="temp">22°C</h1>
+       <h1 class="city">New York</h1>
+
+       <div class="humidity-wind">
+          <div class="humidity-box">
+          <img src="images/humidity.png" alt="humidity.png" class="humidity-png">
+          <div class="humidity">
+              <p class="humidity-value">64%</p>
+              <p>Humidity</p>
+          </div>
+       </div>
+       <div class="wind-box">
+         <img src="images/wind.png" class="wind.png">
+         <div class="wind">
+            <p class="wind-value">7.72 km/h</p>
+            <p>Wind Speed</p>
+         </div>
+       </div>
+       </div>
+       
+     </div>
+     <div class="error">You enter Invalid city!</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

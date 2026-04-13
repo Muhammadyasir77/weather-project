@@ -1,0 +1,124 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(91, 161, 138);
+    display: flex;
+    justify-content: center;
+}
+.weather-app{
+    width: 90%;
+    max-width: 400px;
+    background:linear-gradient(135deg,#00feba,#5b548a);
+    color:#fff;
+    padding:40px 45px;
+    margin-top: 70px;
+    border-radius: 20px;
+    text-align: center;
+}
+.app-heading{
+    text-align: left;
+    margin-bottom:15px;
+    padding-bottom: 10px;
+    color:#564d94
+}
+.input-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-box input{
+    padding:10px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    border: 0;
+    outline:0;
+    background: #ebfffc;
+    color:#555;
+    flex: 1;
+    margin-right: 15px;
+}
+.input-box .search-city{
+     border:0;
+     outline: 0;
+     background-color: #ebfffc;
+     border-radius: 50%;
+     width:2rem;
+     height: 2rem;
+     cursor: pointer;
+}
+.input-box img{
+    width: 17px;
+    height: 17px;
+    margin-top: 3px;
+}
+@media screen and (max-width:500px) {
+    .input-box .search-city {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    
+        .input-box input {
+            padding: 7px 12px;
+            border-radius: 30px;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+    
+        .input-box .search-city>img {
+            width: 13px;
+            height: 13px;
+        }
+}
+
+.display-weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    margin-top: 50px;
+}
+.display-weather .cloud-png{
+    width: 100px;
+    height: 100px;
+}
+
+.humidity-wind{
+    display: flex;
+    gap:40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.humidity-wind img{
+    width: 30px;
+    height:30px;
+}
+.humidity-box{
+    display: flex;
+    gap:10px;
+    font-size: 18px;
+}
+.humidity-box img{
+    height: 25px;
+    margin-top: 10px;
+}
+.wind-box{
+    display: flex;
+    gap:10px;
+    font-size: 18px;
+}
+.wind-box img{
+    margin-top: 5px;
+}
+.error{
+    font-size: 20px;
+    margin:15px;
+    padding-top: 10px;
+    text-align: left;
+    color:rgb(255, 0, 0);
+    display: none;
+}
